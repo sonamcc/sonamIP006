@@ -1,0 +1,91 @@
+/* src/components/About.css */
+
+body {
+    margin: 0; /* Remove default margin */
+    font-family: Arial, sans-serif; /* Set a universal font family */
+    height: 100vh; /* Full viewport height */
+}
+
+.about-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    padding: 40px;
+    background-color: rgba(240, 244, 248, 0.8); /* Softer background color with slight transparency */
+    border-radius: 10px; /* Increased rounding for modern look */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* More pronounced shadow */
+    max-width: 100%; /* Full width */
+    max-height: 100%; /* Full height */
+    margin: 0; /* Remove margins */
+    position: relative; /* Positioning context for background */
+    overflow: hidden; /* Hide overflow for better layout */
+}
+
+.about-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('https://ves.ac.in/architecture/wp-content/uploads/2022/06/20190104_110406.jpg'); /* Change this to your image URL */
+    background-size: cover; /* Cover the entire area */
+    background-position: center; /* Center the background image */
+    opacity: 0.15; /* Make the background image subtle */
+    z-index: 0; /* Send the background behind the text */
+}
+
+.about-title {
+    font-size: 3rem; 
+    color: #2c3e50; 
+    margin-bottom: 20px; 
+    position: relative; /* Context for z-index */
+    z-index: 1; /* Bring title above the background */
+}
+
+.established, .location {
+    font-size: 1.5rem; 
+    color: #34495e; 
+    margin: 10px 0; 
+    position: relative; /* Context for z-index */
+    z-index: 1; /* Bring info above the background */
+}
+
+.description {
+    font-size: 1.2rem; /* Slightly larger for readability */
+    color: #555; /* Neutral gray for the description text */
+    line-height: 1.8; /* Increased line height for better readability */
+    margin: 20px 0; /* Space around the description */
+    position: relative; /* Context for z-index */
+    z-index: 1; /* Bring description above the background */
+}
+
+.courses-title {
+    font-size: 2.5rem; 
+    color: #2980b9; 
+    margin: 20px 0; 
+    position: relative; /* Context for z-index */
+    z-index: 1; /* Bring title above the background */
+}
+
+.courses-list {
+    list-style-type: none; 
+    padding: 0; 
+}
+
+.course-item {
+    font-size: 1.2rem; 
+    color: #2c3e50; 
+    margin: 10px 0; 
+    padding: 15px; /* Increased padding for better appearance */
+    background-color: #e6f7ff; /* Light background for course items */
+    border-radius: 5px; /* Rounded corners for course items */
+    transition: background-color 0.3s; /* Smooth background color change */
+    position: relative; /* Context for z-index */
+    z-index: 1; /* Bring course items above the background */
+}
+
+.course-item:hover {
+    background-color: #cceeff; /* Darker on hover */
+}

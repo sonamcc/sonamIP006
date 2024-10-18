@@ -1,0 +1,30 @@
+.hero-container {
+    background-image: url('https://ves.ac.in/architecture/wp-content/uploads/2022/06/20190104_110406.jpg');
+    height: 90vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+  
+  .hero-overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .hero-text {
+    color: #fff;
+    text-align: center;
+  }
+  
+  .hero-text h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  
+  .hero-text p {
+    font-size: 1.5rem;
+  }
+  

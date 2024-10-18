@@ -1,0 +1,107 @@
+.teachers-container {
+    padding: 40px;
+    background-color: #f0f8ff; /* Light background for contrast */
+}
+
+.title {
+    text-align: center;
+    color: #2c3e50; /* Darker title color */
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.teacher-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px; /* Adjusted gap between cards */
+}
+
+.teacher-card {
+    background-color: #fff; /* White background for cards */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Deeper shadow for depth */
+    width: 250px; /* Fixed width for cards */
+    text-align: center; /* Center text */
+}
+
+.teacher-photo {
+    width: 100px; /* Adjust photo width */
+    height: 100px; /* Adjust photo height */
+    border-radius: 50%; /* Circular photo */
+    margin-bottom: 15px; /* Space below the photo */
+}
+
+.teacher-name {
+    font-size: 1.5rem; /* Larger font for names */
+    color: #007bff; /* Blue color for names */
+}
+
+.teacher-subject, .teacher-department, .teacher-experience {
+    font-size: 0.9rem; /* Smaller font for other details */
+    color: #555; /* Darker gray for details */
+}
+
+.teachers-container {
+    padding: 70px;
+    height: 70vh;
+    background-image: url('https://wallpapercat.com/w/full/1/9/7/914090-1920x1080-desktop-1080p-library-background-photo.jpg');
+    background-size: cover; /* Cover the entire container */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent the background from repeating */
+    position: relative; /* Allow positioning of inner elements if needed */
+    z-index: 1; /* Ensure the container is on top */
+}
+
+.title {
+    text-align: center;
+    color: #fff; /* Title color */
+    font-weight: bold;
+    font-size: 3rem;
+    margin-bottom: 30px;
+    position: relative; /* Position relative for z-index context */
+    z-index: 2; /* Ensure title is above the background */
+    text-shadow: 
+        -1px -1px 0 #000,  
+         1px -1px 0 #000,
+        -1px  1px 0 #000,
+         1px  1px 0 #000; /* Creates a black outline effect */
+}
+
+
+.teacher-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px; /* Adjusted gap between cards */
+    position: relative; /* Position relative for z-index context */
+    z-index: 2; /* Ensure the teacher cards are above the background */
+}
+
+.teacher-card {
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white for contrast */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Deeper shadow for depth */
+    width: 250px; /* Fixed width for cards */
+    text-align: center; /* Center text */
+    z-index: 2; /* Ensure cards are above the background */
+}
+
+.teacher-photo {
+    width: 100px; /* Adjust photo width */
+    height: 100px; /* Adjust photo height */
+    border-radius: 50%; /* Circular photo */
+    margin-bottom: 15px; /* Space below the photo */
+}
+
+.teacher-name {
+    font-size: 1.5rem; /* Larger font for names */
+    color: #007bff; /* Blue color for names */
+}
+
+.teacher-subject, .teacher-department, .teacher-experience {
+    font-size: 0.9rem; /* Smaller font for other details */
+    color: #555; /* Darker gray for details */
+}
